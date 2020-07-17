@@ -1,12 +1,9 @@
 // *********Feet to Mile Converter*********
-
 function feetToMile (feet) {
-
     var mile = feet*0.00018939; /**1 mile= 0.00018939 feet */
     if(feet < 0){
         return "Invalid input! measurement value should be positive number!";
     }
-
     return mile;
 }
 
@@ -15,7 +12,6 @@ console.log ("Convert from Feet to Miles : ", miles,"miles");
 
 
 //********* Wood Calculator**********
-
 function woodCalculator(chair,table,bed){
 
     var totalChairWood = 1*chair;
@@ -26,7 +22,6 @@ function woodCalculator(chair,table,bed){
     if(chair<0 || table<0 || bed <0){
         return "Invalid input! values should be positive.";
     }
-
     return totalWoodNeeded;         
 }
 
@@ -35,7 +30,6 @@ console.log ("Total wood needed for chair,table,bed : " , customerInput,"cubicFe
 
 
 // *********Brick Calculation**********
-
 function brickCalculator(floor) {
 
     if(floor>0 && floor<=10){
@@ -51,28 +45,27 @@ function brickCalculator(floor) {
         return "Invalid input! value should be positive. ";
     }
     else{
-        return "Please input correct value!"
-    }
-    
+        return "Please input correct value!";
+    }    
 }
+
 var floorInput = brickCalculator(50); /** demo(floor number input) */
 console.log ("Bricks needed for your given floor input : ", floorInput,"pcs");
 
-//***********Find the Tiny named friend**************
 
+//***********Find the Tiny named friend**************
 function tinyFriend(friendsNameArr) {
     
     var tinyName= friendsNameArr[0];
     for(var i = 0; i < friendsNameArr.length; i++){
         var tinyWord = friendsNameArr[i];
-
       if(tinyWord.length < tinyName.length){
           tinyName=tinyWord;
-       }
-       
+       }   
     }
-    return tinyName;
+    return tinyName;  
   }
-  var tinyNamedFriend=tinyFriend(["tajmilur","shahidur rahman","taj","naimur","naim"]);/**arry input[] */
+  
+  var tinyNamedFriend=tinyFriend(["tajmilur","shahidur rahman","taj","naimur","naim"]);/**array input[] */
   console.log("The name of my tiny named friend is : ",tinyNamedFriend);
 
